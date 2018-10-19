@@ -31,11 +31,13 @@ requirements:
     - r-base
     - bioconductor-copynumber
     - r-squash
+    - python <3
 
 test:
   commands:
     - $R -e "library('sequenza')"           # [not win]
     - "\"%R%\" -e \"library('sequenza')\""  # [win]
+    - sequenza-utils.py
 
 about:
   home: 'http://cbs.dtu.dk/biotools/sequenza/, Mailing list: https://groups.google.com/forum/#!forum/sequenza-user-group'

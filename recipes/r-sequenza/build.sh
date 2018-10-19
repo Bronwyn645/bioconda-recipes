@@ -32,3 +32,6 @@ else
     popd
   fi
 fi
+
+ln -s $PREFIX/sequenza/exec/sequenza-utils.py $PREFIX/bin/sequenza-utils.py
+chmod +x $PREFIX/bin/sequenza-utils.py
